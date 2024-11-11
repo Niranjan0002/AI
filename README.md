@@ -1,5 +1,19 @@
+<div align="center">
+
 # UCS2504 - Foundations of Artificial Intelligence
+
+### Name : Niranjan B
+### Reg. No. : 3122 22 5001 082
+### Class : 'B'
+
+</div>
+
+<div align="center">
+	
 ## Assignment 1
+
+</div>
+
 **Date :** 01/08/2024
 
 **Problem Description :**
@@ -73,7 +87,7 @@ searcher1 = Searcher(searchExample.problem1)
 searcher1.search() # find first solution
 searcher1.search() # find next solution (repeat until no solutions)
 
-**Algorithm:**
+**Algorithm :**
 ```bash
 Input: problem
 Output: solution, or failure
@@ -215,7 +229,13 @@ Solution: A --> B --> D --> G
 No more solutions
 ```
 
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 2
+
+</div>
+
 **Date :** 08/08/2024
 
 **Problem Description :**
@@ -285,7 +305,7 @@ Implement FrontierPQ. A frontier is a list of triples. The first element of each
 A Searcher for a problem can be asked repeatedly for the next path. To solve a problem, you can construct a Searcher object for the problem and then repeatedly ask for the next path using search. If there are no more paths, None is returned. Implement Searcher class using using the FrontierPQ class.
 
 
-**Algorithm:**
+**Algorithm :**
 ```bash
 Input: problem
 Output: solution, or failure
@@ -405,7 +425,13 @@ A --> C --> B --> D --> G
 PS C:\Users\niran\Downloads> 
 ```
 
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 3
+
+</div>
+
 **Date :** 12/08/2024
 
 **Problem Description 1:**
@@ -427,7 +453,7 @@ by the goal arrangement,
 
 
 
-**Algorithm:**
+**Algorithm :**
 1. A* 
 ```bash
 Input: problem
@@ -778,7 +804,7 @@ states are explored by your algorithm?
 
 
 
-**Algorithm:**
+**Algorithm :**
 ```bash
 Input: problem
 Output: solution, or failure
@@ -898,7 +924,13 @@ PS C:\Users\niran\Downloads>  & 'c:\Users\niran\anaconda3\envs\spyder-cf\python.
 (1, 4, 3)
 PS C:\Users\niran\Downloads>   
 ```
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 4
+
+</div>
+
 **Date :** 29/08/2024
 
 **Problem Description :**
@@ -911,7 +943,7 @@ Place 8 queens “safely” in a 8×8 chessboard – no queen is under attack fr
 - Evaluation function: the number of attacking pairs in 8-queens
 Implement a local search algorithm to find one safe assignment.
 
-**Algorithm:**
+**Algorithm :**
 1. Local Search
 ```bash
 Input: problem
@@ -1166,7 +1198,13 @@ Q . . .
 PS C:\Users\niran\Downloads> 
 ```
 
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 5
+
+</div>
+
 **Date :** 05/09/2024
 
 **Problem Description :**
@@ -1231,7 +1269,7 @@ Solve CSP using depth-first search through the space of partial assignments. Thi
 
 
 
-**Algorithm:**
+**Algorithm :**
 ```bash
 Input: assignment, CSP (Constraint Satisfaction Problem)
 Output: solution, or failure
@@ -1396,7 +1434,13 @@ Solution 2:
 PS C:\Users\niran\Downloads> 
 ```
 
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 6
+
+</div>
+
 **Date :** 05/09/2024
 
 **Problem Description :**
@@ -1413,7 +1457,7 @@ game tree you have created.
 2. Modify the minimax function to include αβ-pruning.
 
 
-**Algorithm:**
+**Algorithm :**
 1. Without Alpha-beta pruning
 ```bash
 function minimax(node):
@@ -1595,7 +1639,13 @@ No. of nodes explored = 13
 PS C:\Users\niran\Downloads> 
 ```
 
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 7
+
+</div>
+
 **Date :** 25/09/2024
 
 **Problem Description :**
@@ -1653,7 +1703,7 @@ takes kb, a knowledge base KB and goal as inputs, where goal is a list of atoms.
 True if kb ⊢ goal.
 
 
-**Algorithm:**
+**Algorithm :**
 1. Top-Down Approach
 ```bash
 function prove(KB, ans_body, indent=""):
@@ -1900,7 +1950,13 @@ Passed unit test
 PS C:\Users\niran\Downloads> 
 ```
 
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
 ## Assignment 8
+
+</div>
+
 **Date :** 25/09/2024
 
 **Problem Description :**
@@ -1922,7 +1978,7 @@ Write functions to
 Observation: Write the formula for joint probability distribution and explain each parameter.
 Justify the answer with the advantage of BN.
 
-**Algorithm:**
+**Algorithm :**
 ```bash
 Input: Prior probabilities for hypotheses H
 Output: Posterior Probability P(H|E)
@@ -2195,3 +2251,941 @@ P(e=0, i=1, m=0, a=1, s=1) = 0.0034
 Total Joint Probability for the given states = 0.0084
 PS C:\Users\niran\Downloads> 
 ```
+
+<div style="page-break-after: always;"></div>
+<div align="center">
+	
+## Game Report - THE LAST LABYRINTH
+
+</div>
+
+**Date :** 12/11/2024
+
+**Problem Description :**
+
+"Escape the Maze or Become its Prey. The Last Labyrinth Awaits."
+This project brings The Last Labyrinth to life through a Pygame application, immersing players in a suspenseful maze-escape experience. The Last Labyrinth is centred around a single, intricately designed labyrinth, where each element is purposefully crafted to challenge players. The maze remains the same across sessions, allowing players to refine their strategies and face new challenges within a familiar yet dangerous environment.
+In this haunting maze, the player must evade intelligent, adaptive AI entities known as Reapers. The Reapers work independently yet strategically, each one reinforcing the others' effectiveness, transforming the once silent maze into a high-stakes game of cat and mouse. The sequential activation of the Reapers based on threshold times amplifies the urgency, with each new Reaper intensifying the chase as it joins the pursuit.
+Players must navigate the maze while avoiding obstacles like Spiky Webs, which not only slow down movement but also reduce their score upon contact. Phantom Tokens scattered throughout the labyrinth offer opportunities to boost the score. A scoring system encourages risk-taking through collectible Phantom Tokens, rewarding players for strategic exploration.
+
+**Objectives :**
+
+The primary objective in The Last Labyrinth is to escape the maze while avoiding capture by three adaptive, AI-controlled Reapers. The player must navigate carefully, balancing the need to evade the Reapers with the desire to collect valuable Phantom Tokens scattered throughout the maze.
+Player Movement: Players can move freely in four directions—up, down, left, and right—as they traverse the maze. Players must avoid obstacles like Spiky Webs, which slow their movement and decrease their score, while simultaneously positioning themselves to evade the Reapers and collect as many Phantom Tokens possible.
+AI-Controlled Reapers: The Reapers are the primary antagonists in the game, each controlled by a unique algorithm that influences its hunting behavior.
+- Reaper 1 (Blinky) uses the Greedy Best-First Search, simulating potential moves ahead to predict and counter the player’s path, making it an intelligent and reactive adversary.
+- Reaper 2 (Clyde) employs the Minimax algorithm, focusing on the most direct route to the player, prioritizing immediate distance over long-term strategy.
+- Reaper 3 (Inky) follows the A Search* algorithm, balancing both the shortest path and strategic foresight, resulting in a highly adaptable and efficient predator.
+
+**Characters :**
+
+![Screenshot 2024-11-11 233240](https://github.com/user-attachments/assets/ed8256ae-a0fa-4549-999f-da517cb7ba54)
+
+**Requirements :**
+
+Software: 
+The provided code is written in Python and uses the Pygame library for creating a graphical user interface. To run this code, you will need the following software requirements: 
+1. Python: Ensure that Python is installed on your system. You can download and install Python from the official website: https://www.python.org/downloads/ 
+2. Pygame: Install the Pygame library using pip, which is the package installer for Python
+
+Functional Requirements for the Maze Game:
+
+1. Grid Generation:
+The maze is represented as a grid, where each cell can either be a part of the path or an obstacle. This grid is static across sessions, providing a consistent yet dangerous environment to navigate. 
+Each number from 0 to 9 represents a specific tile pattern, which is used to construct the grid. These tiles are designed to fit together, forming various walls, paths, corners, and features in a maze or structured layout.
+
+![Screenshot 2024-11-11 233354](https://github.com/user-attachments/assets/778c0c84-bcaf-416a-8e9c-737226f3d015)
+
+3. Player Movement: The player should be able to move within the maze using arrow keys (up, down, left, right).
+
+4. Pathfinding Algorithms:
+-  Greedy Best First Search Algorithm (Blinky):
+The algorithm used for Blinky's movement is based on a Greedy Best-First Search (GBFS) heuristic approach that calculates the shortest path towards the player (Pacman) by evaluating adjacent positions in the maze. For each neighboring cell, the Manhattan distance (a heuristic measure) is calculated using the formula abs(a[0] - b[0]) + abs(a[1] - b[1]), where a and b represent the current and target positions, respectively. The algorithm then identifies the adjacent position with the smallest distance to Pacman, which represents the next step Blinky should take. Blinky's movement is updated by adjusting its position towards this selected neighboring cell. The algorithm continuously updates Blinky's position, making it chase Pacman more efficiently by focusing on the closest path based on the calculated heuristic.
+Reduced Precision of Blinky: The heuristic abs(a[0] - b[1]) + abs(a[1] - b[0]) is less accurate than the standard Manhattan distance formula return abs(a[0] - b[0]) + abs(a[1] - b[1]). This results in incorrect distance calculations, causing Blinky to make suboptimal movement decisions.
+
+-  Minimax Algorithm (Clyde):
+Clyde’s movement is governed by the Minimax algorithm. The player’s goal is to maximize the distance between themselves and the Reapers to stay safe, while the Reapers try to minimize the distance to the player to capture them. The Minimax algorithm works by recursively exploring all possible moves up to a specified depth, evaluating each move based on the principle of maximizing the player's advantage (increasing the distance) and minimizing the opponent’s advantage (decreasing the distance).
+The Minimax algorithm is employed to simulate turn-based decision-making where the player and the Reapers are in a continuous "cat-and-mouse" chase.
+For the Reapers: The goal is to minimize the distance to the player, meaning they will select moves that reduce the gap and increase their chances of catching the player.
+
+-  A* search Algorithm (Inky):
+The movement of Inky is controlled by the A* search algorithm, which is a combination of both heuristic and actual distance calculations to find the optimal path toward the player (Pacman). The algorithm evaluates each possible move based on a sum of two distances: the Manhattan distance (or heuristic) between Inky's current position and Pacman’s position, and the Euclidean distance from a fixed target point. The total distance for each neighboring position is the sum of these two distances, and the position with the lowest total is selected as Inky’s next move. The process repeats as Inky continues to move toward Pacman, always seeking the most efficient path by considering both the immediate environment (through the heuristic) and the larger goal (using the Euclidean distance to the fixed target). This dual consideration of both types of distances allows Inky to navigate the maze more effectively, combining local and global strategies to chase the player.
+
+4. Scoring System: The game features a dynamic scoring system, where the player’s score increases as they collect Phantom Tokens and decreases if they meet Spiky Webs.
+
+   ![Screenshot 2024-11-11 233418](https://github.com/user-attachments/assets/df959905-56a5-413a-9d70-f598b1431a0f)
+
+6. Game Timer: A timer that informs the player of how much time is left before a Reaper becomes active. After the game ends, a total timer will track how long the player spent in the maze.
+
+7. Visualization: The game should visually display the maze, pathfinding process, and the final path from start to end.
+
+**Algorithms :**
+1. Greedy Best First Search
+```bash
+function GreedyBestFirstSearch(start_pos, goal_pos, create_adjacency_dict, heuristic_func):
+    adjacency_dict ← create_adjacency_dict()
+    adjacent_positions ← adjacency_dict[start_pos]
+    
+    next_move ← None
+    min_distance ← infinity
+    
+    for each neighbor in adjacent_positions do
+        distance ← heuristic_func(neighbor, goal_pos)
+        
+        if distance < min_distance then
+            min_distance ← distance
+            next_move ← neighbor
+    
+    return next_move
+```
+2. Minimax
+```bash
+function Minimax(position, depth, is_blinky_turn, pacman_pos):
+    if depth equals 0 or position equals pacman_pos then
+        return ManhattanDistance(position, pacman_pos)
+    
+    adjacency_dict ← createAdjacencyDict()
+    adjacent_positions ← adjacency_dict[position]
+
+    if is_blinky_turn then
+        min_eval ← infinity
+        for each move in adjacent_positions do
+            eval ← Minimax(move, depth - 1, False, pacman_pos)
+            min_eval ← min(min_eval, eval)
+        return min_eval
+    else
+        max_eval ← -infinity
+        for each move in adjacent_positions do
+            eval ← Minimax(move, depth - 1, True, pacman_pos)
+            max_eval ← max(max_eval, eval)
+        return max_eval
+```
+3. A* Search
+```bash
+function AStarSearch(start_pos, goal_pos, create_adjacency_dict, heuristic_func, additional_cost_func, additional_cost_pos):
+    adjacency_dict ← create_adjacency_dict()
+    adjacent_positions ← adjacency_dict[start_pos]
+    
+    next_move ← None
+    min_distance ← infinity
+    
+    for each neighbor in adjacent_positions do
+        hdistance ← heuristic_func(neighbor, goal_pos)
+        adistance ← additional_cost_func(additional_cost_pos, neighbor)
+        distance ← hdistance + adistance
+        
+        if distance < min_distance then
+            min_distance ← distance
+            next_move ← neighbor
+    
+    return next_move
+
+```
+
+**Code :** 
+1. board.py
+```python
+# 0 = empty black rectangle, 1 = dot, 2 = big dot, 3 = vertical line,
+# 4 = horizontal line, 5 = top right, 6 = top left, 7 = bot left, 8 = bot right
+# 9 = gate
+boards = [
+[6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5],
+[3, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 3],
+[3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3],
+[3, 3, 1, 6, 4, 4, 5, 1, 6, 4, 4, 4, 5, 1, 3, 3, 1, 6, 4, 4, 4, 5, 1, 6, 4, 4, 5, 1, 3, 3],
+[3, 3, 2, 3, 0, 0, 3, 1, 3, 0, 0, 0, 3, 1, 3, 3, 1, 3, 0, 0, 0, 3, 1, 3, 0, 0, 3, 2, 3, 3],
+[3, 3, 1, 7, 4, 4, 8, 1, 7, 4, 4, 4, 8, 1, 7, 8, 1, 7, 4, 4, 4, 8, 1, 7, 4, 4, 8, 1, 3, 3],
+[3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3],
+[3, 3, 1, 6, 4, 4, 5, 1, 6, 5, 1, 6, 4, 4, 4, 4, 4, 4, 5, 1, 6, 5, 1, 6, 4, 4, 5, 1, 3, 3],
+[3, 3, 1, 7, 4, 4, 8, 1, 3, 3, 1, 7, 4, 4, 5, 6, 4, 4, 8, 1, 3, 3, 1, 7, 4, 4, 8, 1, 3, 3],
+[3, 3, -1, 1, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 1, -1, 3, 3],
+[3, 7, 4, 4, 4, 4, 5, 1, 3, 7, 4, 4, 5, 0, 3, 3, 0, 6, 4, 4, 8, 3, 1, 6, 4, 4, 4, 4, 8, 3],
+[3, 0, 0, 0, 0, 0, 3, 1, 3, 6, 4, 4, 8, 0, 7, 8, 0, 7, 4, 4, 5, 3, 1, 3, 0, 0, 0, 0, 0, 3],
+[3, 0, 0, 0, 0, 0, 3, 1, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 1, 3, 0, 0, 0, 0, 0, 3],
+[8, 0, 0, 0, 0, 0, 3, 1, 3, 3, 0, 6, 4, 4, 4, 4, 4, 4, 5, 0, 3, 3, 1, 3, 0, 0, 0, 0, 0, 7],
+[4, 4, 4, 4, 4, 4, 8, 1, 7, 8, 0, 3, 0, 0, 0, 0, 0, 0, 3, 0, 7, 8, 1, 7, 4, 4, 4, 4, 4, 4],
+[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+[4, 4, 4, 4, 4, 4, 5, 1, 6, 5, 0, 3, 0, 0, 0, 0, 0, 0, 3, 0, 6, 5, 1, 6, 4, 4, 4, 4, 4, 4],
+[5, 0, 0, 0, 0, 0, 3, 1, 3, 3, 0, 7, 4, 4, 4, 4, 4, 4, 8, 0, 3, 3, 1, 3, 0, 0, 0, 0, 0, 6],
+[3, 0, 0, 0, 0, 0, 3, 1, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 1, 3, 0, 0, 0, 0, 0, 3],
+[3, 0, 0, 0, 0, 0, 3, 1, 3, 3, 0, 6, 4, 4, 4, 4, 4, 4, 5, 0, 3, 3, 1, 3, 0, 0, 0, 0, 0, 3],
+[3, 6, 4, 4, 4, 4, 8, 1, 7, 8, 0, 7, 4, 4, 5, 6, 4, 4, 8, 0, 7, 8, 1, 7, 4, 4, 4, 4, 5, 3],
+[3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 3, 3],
+[3, 3, 1, 6, 4, 4, 5, 1, 6, 4, 4, 4, 5, 1, 3, 3, 1, 6, 4, 4, 4, 5, 1, 6, 4, 4, 5, 1, 3, 3],
+[3, 3, 1, 7, 4, 5, 3, 1, 7, 4, 4, 4, 8, 1, 7, 8, 1, 7, 4, 4, 4, 8, 1, 3, 6, 4, 8, 1, 3, 3],
+[3, 3, 2, 1, 1, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 1, 1, 2, 3, 3],
+[3, 7, 4, 5, 1, 3, 3, 1, 6, 5, 1, 6, 4, 4, 4, 4, 4, 4, 5, 1, 6, 5, 1, 3, 3, 1, 6, 4, 8, 3],
+[3, 6, 4, 8, 1, 7, 8, 1, 3, 3, 1, 7, 4, 4, 5, 6, 4, 4, 8, 1, 3, 3, 1, 7, 8, 1, 7, 4, 5, 3],
+[3, 3, 1, 1, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 3, 3, 1, 1, 1, 1, 1, 1, 3, 3],
+[3, 3, 1, 6, 4, 4, 4, 4, 8, 7, 4, 4, 5, 1, 3, 3, 1, 6, 4, 4, 8, 7, 4, 4, 4, 4, 5, 1, 3, 3],
+[3, 3, 1, 7, 4, 4, 4, 4, 4, 4, 4, 4, 8, 1, 7, 8, 1, 7, 4, 4, 4, 4, 4, 4, 4, 4, 8, 1, 3, 3],
+[3, 3, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, -1, 3, 3],
+[3, 7, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8, 3],
+[7, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 8]]
+
+#print(len(boards),len(boards[0]))
+#print(boards[9][2])
+
+adjacent_dict = {}
+rows = len(boards)
+cols = len(boards[0])
+
+for x in range(rows):
+    for y in range(cols):
+        # Only consider cells that are not walls
+        if boards[x][y] <= 2:
+            # Initialize the adjacency list for this cell
+            adjacent_dict[(x, y)] = []
+            #print(x,y)
+            
+            # Check the four adjacent positions
+            for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:  # up, down, left, right
+                nx, ny = x + dx, y + dy
+                # Check boundaries and if the adjacent cell is not a wall
+                if 0 <= nx < rows and 0 <= ny < cols and boards[nx][ny] <= 2:
+                    adjacent_dict[(x, y)].append((nx, ny))
+#print(adjacent_dict.get((15,16)))
+#print(adjacent_dict)
+```
+2. pacman.py
+```python
+'''''
+BLINKY : Greedy best first search (manhattan heuristic) 
+CLYDE : Minimax
+INKY : A* search
+
+
+Blinky = first 30s
+30 to 60s - both blinky and clyde
+after 1min, inky
+'''
+
+
+
+from board import boards
+import math
+import pygame
+import time
+pygame.init()
+pygame.mixer.init()
+
+import random
+import csv
+#<------------------INITIALISATION START------------------------>
+st1=time.time()        ######game start
+en=0                   ###end time
+WIDTH=600
+HEIGHT=650
+
+death_sound = pygame.mixer.Sound("Death.mp3")
+chomp_sound = pygame.mixer.Sound("Chomp.mp3")
+win_sound = pygame.mixer.Sound("win.mp3")
+
+
+
+
+
+screen=pygame.display.set_mode([WIDTH,HEIGHT])
+timer = pygame.time.Clock()
+fps=80 #max speed
+font = pygame.font.Font('freesansbold.ttf',20)
+level = boards
+color = 'darkgreen'
+PI = math.pi
+player_images=[]
+for i in range(1,5):
+    player_images.append(pygame.transform.scale(pygame.image.load(f'./player/{i}.png'),(25,25)))
+ghost_speeds = [0.5,0.1,0.1,0.2]
+
+player_x = 35
+player_y = 28
+#<-------------BLINKY GHOST (RED)------------------------------------------>
+blinky_img = pygame.transform.scale(pygame.image.load(f'./ghost/red.png'),(25,25))
+blinky_box = False
+
+blinky_xc= 22#530
+blinky_yc= 22#31
+blinky_direction=0
+#<-------------INKY GHOST (BLUE)------------------------------------------>
+inky_img = pygame.transform.scale(pygame.image.load(f'./ghost/blue.png'),(25,25))
+inky_box = False
+inky_xc= 9#530
+inky_yc= 26#31
+inky_direction=0
+
+#<-------------CLYDE GHOST (ORANGE)------------------------------------------>
+clyde_img = pygame.transform.scale(pygame.image.load(f'./ghost/orange.png'),(25,25))
+clyde_box = False
+clyde_xc= 22#530
+clyde_yc= 22#31
+clyde_direction=0
+
+
+
+death_by_blinky=0
+death_by_inky=0
+death_by_clyde = 0
+
+#<----------------------------------------------------------------------------->
+
+
+
+direction=0
+counter=0
+flicker =False
+turns_allowed =  [False , False , False , False]
+direction_command = 0
+player_speed = 2
+downtime = 0 #time when fps 40 is triggered
+stoptime = 0 #time when stop is triggered
+score=0
+targets=[(player_x,player_y)]        #target of each reaper
+#<------------------INITIALISATION END------------------------>
+
+class Ghost:
+    def __init__(self,x_cord,y_cord,target,speed,img,direction,box,id):
+        self.x_pos = x_cord   #xyc
+        self.y_pos = y_cord   #xyc
+        self.center_x = self.x_pos*15 + 15
+        self.center_y = self.y_pos*20 + 15
+        self.target = target
+        self.speed = speed
+        self.img = img
+        self.direction = direction
+        self.in_box = box
+        self.id = id
+        self.turns, self.in_box = self.check_collisions()
+        #self.rect = self.draw() 
+
+    def draw(self):
+        if self.x_pos<=32 and self.y_pos<=29:
+            screen.blit(self.img, (self.y_pos*20, self.x_pos*15))
+            
+
+    def check_collisions(self):
+        
+        # Initialize turns for Right, Left, Up, Down
+        self.turns = [False, False, False, False]
+
+        if 0 < blinky_xc < 29:
+            if level[blinky_xc][blinky_yc ] == 9:
+                self.turns[2] = True  # Up
+            if level[blinky_xc][blinky_yc ] < 3 or (level[blinky_xc][blinky_yc] == 9 and self.in_box):
+                self.turns[3] = True  # Down
+            if level[blinky_xc ][blinky_yc] < 3 or (level[blinky_xc ][blinky_yc] == 9 and self.in_box):
+                self.turns[1] = True  # Left
+            if level[blinky_xc ][blinky_yc] < 3 or (level[blinky_xc ][blinky_yc] == 9 and self.in_box):
+                self.turns[0] = True  # Right
+
+           
+            if self.direction == 2 or self.direction == 3:   #up or down
+                if 6 <= blinky_yc % 30 <= 15:
+                    if level[blinky_xc][blinky_yc ] < 3 or (level[blinky_xc][blinky_yc ] == 9 and self.in_box):
+                        self.turns[3] = True
+                    if level[blinky_xc][blinky_yc ] < 3 or (level[blinky_xc][blinky_yc ] == 9 and self.in_box):
+                        self.turns[2] = True
+                if 6 <= blinky_xc % 32 <= 15:
+                    if level[blinky_xc - 1][blinky_yc] < 3 or (level[blinky_xc ][blinky_yc] == 9 and self.in_box):
+                        self.turns[1] = True
+                    if level[blinky_xc + 1][blinky_yc] < 3 or (level[blinky_xc ][blinky_yc] == 9 and self.in_box):
+                        self.turns[0] = True
+
+            if self.direction == 0 or self.direction == 1:
+                if 6 <= blinky_yc % 30 <= 15:
+                    if level[blinky_xc][blinky_yc ] < 3 or (level[blinky_xc][blinky_yc + 1] == 9 and self.in_box):
+                        self.turns[3] = True
+                    if level[blinky_xc][blinky_yc ] < 3 or (level[blinky_xc][blinky_yc - 1] == 9 and self.in_box):
+                        self.turns[2] = True
+                if 6 <= blinky_xc % 32 <= 15:
+                    if level[blinky_xc - 1][blinky_yc] < 3 or (level[blinky_xc ][blinky_yc] == 9 and self.in_box):
+                        self.turns[1] = True
+                    if level[blinky_xc + 1][blinky_yc] < 3 or (level[blinky_xc ][blinky_yc] == 9 and self.in_box):
+                        self.turns[0] = True
+        else:
+            self.turns[0] = True
+            self.turns[1] = True
+
+       ### for ghost in a box (level 9......)
+        if 350 < self.x_pos < 550 and 370 < self.y_pos < 480:
+            self.in_box = True
+        else:
+            self.in_box = False
+
+        return self.turns, self.in_box
+
+
+
+    def createAdjacencyDict(self):
+        adjacent_dict = {}
+        rows = len(level)
+        cols = len(level[0])
+        
+        for x in range(rows):
+            for y in range(cols):
+                #level <=2 ====> coins
+                if level[x][y] <= 2:
+                    adjacent_dict[(x, y)] = []
+                    for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:  # up, down, left, right
+                        #checl al 4 neighbors
+                        nx, ny = x + dx, y + dy
+                     
+                        if 0 <= nx < rows and 0 <= ny < cols and level[nx][ny] <= 2:
+                            adjacent_dict[(x, y)].append((nx, ny))
+        #print(adjacent_dict)
+        return adjacent_dict
+    
+    
+
+    def heuristic_blinky(self, a, b):
+        #return max((a[0]-b[0]),a[1]-b[1])
+        return abs(a[0] - b[1]) + abs(a[1] - b[0])         #######reduced power
+
+    def move_blinky(self):
+        ghost_pos = (blinky_xc,blinky_yc)  # (row, col)
+        pacman_pos = (player_y // 15, player_x // 20)
+        #print(ghost_pos)
+
+        adjacency_dict = self.createAdjacencyDict()   ###get adjacency dict
+
+        # Get adjacent positions of the ghost
+        adjacent_positions = adjacency_dict.get(ghost_pos, [])
+        #print(adjacent_positions)
+
+        next_move = None
+        min_distance = float('inf') 
+        ###loop through all possible next states and choose the best
+        for neighbor in adjacent_positions:
+            distance = self.heuristic_blinky(neighbor, pacman_pos)
+            #print(distance)
+            if distance < min_distance:
+                min_distance = distance
+                next_move = neighbor
+        #print(next_move)
+       
+        self.x_pos += (next_move[0] - ghost_pos[0]) * 0.5 
+        self.y_pos += (next_move[1] - ghost_pos[1]) * 0.5
+        #self.x_pos=next_move[0]
+        #self.y_pos=next_move[1]
+        #print("updated next move ",next_move[0],next_move[1])
+
+        for _ in range(100000):
+            pass
+        self.draw()
+        
+        return next_move[0],next_move[1]
+    
+    def evaluate(self,a,b):
+        return math.sqrt(abs((a[0]-b[1])**2 - (a[1]-b[0])**2))
+    
+    def minimax(self, position, depth, is_blinky_turn, pacman_pos):
+        #base case --
+        if depth == 0 or position == pacman_pos:
+            return self.evaluate(position, pacman_pos)
+        
+        adjacency_dict = self.createAdjacencyDict()  ###get adjacency dict
+        adjacent_positions = adjacency_dict.get(position, [])
+
+        if is_blinky_turn:
+            min_eval = float('inf')
+            for move in adjacent_positions:
+                eval = self.minimax(move, depth - 1, False, pacman_pos)
+                min_eval = min(min_eval, eval)
+            return min_eval
+        else:
+            max_eval = float('-inf')
+            for move in adjacent_positions:
+                eval = self.minimax(move, depth - 1, True, pacman_pos)
+                max_eval = max(max_eval, eval)
+            return max_eval
+
+    def move_clyde(self, depth=3):
+
+        ghost_pos = (self.x_pos, self.y_pos)  
+        pacman_pos = (player_y // 15, player_x // 20)  #target
+  
+        adjacency_dict = self.createAdjacencyDict()   ##get adjacency dict
+        adjacent_positions = adjacency_dict.get(ghost_pos, [])
+        
+        best_move = ghost_pos
+        min_distance = float('inf')
+        #loop thro next possible states
+        for move in adjacent_positions:
+            eval = self.minimax(move, depth - 1, False, pacman_pos)
+            if eval < min_distance:
+                min_distance = eval
+                best_move = move
+
+
+        self.x_pos += (best_move[0] - ghost_pos[0]) * 0.5
+        self.y_pos += (best_move[1] - ghost_pos[1]) * 0.5
+        #print(f"Updated Blinky's position to: {best_move}")
+
+        for _ in range(100000):
+            pass
+        self.draw()
+
+        return best_move[0], best_move[1]
+
+    def euclidian(self,a,b):
+        return math.sqrt((a[0]-b[0])**2 + (a[1]-b[1])**2)
+
+    def heuristic_inky(self,a,b):
+        return abs(a[0]-b[0])+abs(a[1]-b[1])
+
+
+    def move_inky(self):
+        ghost_pos = (inky_xc,inky_yc)  # (row, col)
+        pacman_pos = (player_y // 15, player_x // 20)
+        #print(ghost_pos)
+
+        adjacency_dict = self.createAdjacencyDict()   ##get adj. dict
+        adjacent_positions = adjacency_dict.get(ghost_pos, [])
+        #print(adjacent_positions)  
+
+        next_move = None
+        min_distance = float('inf')  
+        #loop thro next possible states
+        for neighbor in adjacent_positions:
+            hdistance = self.heuristic_inky(neighbor, pacman_pos)
+            adistance=self.euclidian((9,26),neighbor)
+            distance=adistance+hdistance
+            if distance < min_distance:
+                min_distance = distance
+                next_move = neighbor
+            #print(next_move,distance)
+
+        self.x_pos += (next_move[0] - ghost_pos[0]) * 0.5
+        self.y_pos += (next_move[1] - ghost_pos[1]) * 0.5
+        #self.x_pos=next_move[0]
+        #self.y_pos=next_move[1]
+        #print("updated next move ",next_move[0],next_move[1])
+
+        for _ in range(1000000):
+            pass
+        self.draw()
+        
+        return next_move[0],next_move[1]
+        
+
+
+
+def draw_misc():
+    #####for all the texts on the screen
+    score_text = font.render(f'Score : {score}',True,'white')
+    screen.blit(score_text,(10,600))
+    if (time.time()-st1<=30):
+        time_text = font.render(str(int(30-(time.time()-st1)))+' Seconds until clyde arrives' ,True,'orange')
+        screen.blit(time_text,(150,600))
+    if (time.time()-st1>=30 and time.time()-st1<60):
+        time_text = font.render(str(int(60-(time.time()-st1)))+' Seconds until inky arrives' ,True,'blue')
+        screen.blit(time_text,(150,600))
+    if (time.time()-st1>60):
+        time_text = font.render('Inky is on the field' ,True,'blue')
+        screen.blit(time_text,(150,600))
+    
+
+
+def draw_board():
+    ###to draw boards
+    num1 = ((HEIGHT - 50 )//32)   #50 is the padding , 32 rows
+    num2 = ((WIDTH)//30)          #30 columns
+    for i in range(len(level)):
+        for j in range(len(level[i])):
+            if level[i][j]==-1:   #slow down ticket
+                pygame.draw.circle(screen, 'red' , (j*num2+ (0.5*num2), i*num1 + (0.5*num1)) , 10)
+
+                
+            if level[i][j]==1:
+                pygame.draw.circle(screen, ' gold' , (j*num2+ (0.5*num2), i*num1 + (0.5*num1)) , 4)
+            if level[i][j]==2 and not flicker:
+                pygame.draw.circle(screen, ' gold' , (j*num2+ (0.5*num2), i*num1 + (0.5*num1)) , 8)
+            if level[i][j]==3:
+                pygame.draw.line(screen ,  color , (j * num2 + (0.5 * num2) , i*num1), (j * num2 + (0.5 * num2) , i*num1+num1 ), 3)
+            if level[i][j]==4:
+                pygame.draw.line(screen ,  color , (j * num2 , i*num1 + (0.5*num1)), (j * num2 + num2 , i*num1+(0.5*num1) ), 3)
+            if level[i][j]==5:
+                pygame.draw.arc(screen , color ,  [(j*num2 - (num2*0.3)) - 4 , (i*num1 + (0.5*num1)) , num2, num1 ] , 0 , PI/2 , 3)
+
+            if level[i][j]==6:
+                pygame.draw.arc(screen , color ,  [(j*num2 + (num2*0.5))  , (i*num1 + (0.5*num1)) , num2, num1 ] , PI/2, PI  , 3)
+
+            if level[i][j]==7:
+                pygame.draw.arc(screen , color ,  [(j*num2 + (num2*0.5))  , (i*num1 - (0.3*num1)) , num2, num1 ] , PI, 3*PI/2  , 3)
+
+            if level[i][j]==8:
+                pygame.draw.arc(screen , color ,  [(j*num2 - (num2*0.3)) - 4  , (i*num1 - (0.4*num1)) , num2, num1 ] , 3*PI/2, 2*PI  , 3)
+
+
+           
+
+            
+
+
+def draw_player():
+    #0-right , 1-left , 2-up, 3-down
+    if direction == 0:
+        screen.blit(player_images[counter//5],(player_x,player_y))
+    elif direction == 1:
+        screen.blit(pygame.transform.flip(player_images[counter//5],True,False),(player_x,player_y))
+    elif direction == 2:
+        screen.blit(pygame.transform.rotate(player_images[counter//5],90),(player_x,player_y))
+    elif direction == 3:
+        screen.blit(pygame.transform.rotate(player_images[counter//5],270),(player_x,player_y))
+
+def check_position(centerx,centery):
+    ########to check the player collisions
+    global fps,downtime,stoptime
+    #print(time.time()-downtime)
+    if fps==40:
+        if (time.time() - downtime  >= 5):fps=60      #slow down for 5 seconds
+    elif fps==0:
+        if (time.time() - stoptime  >= 3):fps=60     
+    turns = [False, False, False, False]
+    num1 = (HEIGHT - 50) // 33
+    num2 = (WIDTH // 30)
+    #print(num1,num2)
+    num3 = 10
+
+    #print(num1,num2,"//")
+    if centerx // 30 < 29:
+        if direction == 0:   #right
+            if level[centery // num1][(centerx - num3) // num2] < 3 :
+                turns[1] = True
+                ch=level[centery // num1][(centerx - num3) // num2]
+                if ch == -1:
+                    downtime=time.time()
+                    fps=40
+              
+        if direction == 1:   #left
+            if level[centery // num1][(centerx + num3) // num2] < 3:
+                turns[0] = True
+                ch = level[centery // num1][(centerx - num3) // num2]
+                if ch == -1:
+                    downtime=time.time()
+                    fps=40
+                elif ch == -2:
+                    stoptime=time.time()
+                    fps=0
+
+        if direction == 2:   #up
+            if level[(centery + num3) // num1][centerx // num2] < 3:
+                turns[3] = True
+                ch = level[centery // num1][(centerx - num3) // num2]
+                if ch == -1:
+                    downtime=time.time()
+                    fps=40
+                elif ch == -2:
+                    stoptime=time.time()
+                    fps=0
+        if direction == 3:   #down
+            if level[(centery - num3) // num1][centerx // num2] < 3:
+                turns[2] = True
+                ch=level[centery // num1][(centerx - num3) // num2]
+                if ch == -1:
+                    downtime=time.time()
+                    fps=40
+                elif ch == -2:
+                    stoptime=time.time()
+                    fps=0
+
+        if direction == 2 or direction == 3:
+            if 6 <= centerx % num2 <= 15:
+                if level[(centery + num3) // num1][centerx // num2] < 3:
+                    turns[3] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+                    
+                if level[(centery - num3) // num1][centerx // num2] < 3:
+                    turns[2] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+            if 6<= centery % num1 <= 15:
+                if level[centery // num1][(centerx - num2) // num2] < 3:
+                    turns[1] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+                if level[centery // num1][(centerx + num2) // num2] < 3:
+                    turns[0] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+
+        if direction == 0 or direction == 1:
+            if 6 <= centerx % num2 <= 15:
+                if level[(centery + num1) // num1][centerx // num2] < 3:
+                    turns[3] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+                if level[(centery - num1) // num1][centerx // num2] < 3:
+                    turns[2] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+            if 6 <= centery % num1 <= 15:
+                if level[centery // num1][(centerx - num3) // num2] < 3:
+                    turns[1] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+                if level[centery // num1][(centerx + num3) // num2] < 3:
+                    turns[0] = True
+                    ch=level[centery // num1][(centerx - num3) // num2]
+                    if ch == -1:
+                        downtime=time.time()
+                        fps=40
+                    elif ch == -2:
+                        stoptime=time.time()
+                        fps=0
+    else:
+        turns[0] = True
+        turns[1] = True
+
+    return turns
+
+def move_player(play_x, play_y):
+    if direction == 0 and turns_allowed[0]:
+        play_x += player_speed
+    elif direction == 1 and turns_allowed[1]:
+        play_x -= player_speed
+    if direction == 2 and turns_allowed[2]:
+        play_y -= player_speed
+    elif direction == 3 and turns_allowed[3]:
+        play_y += player_speed
+    return play_x, play_y
+    
+def calculatescore(score):
+    num1=(HEIGHT-50)//33
+    num2=WIDTH//30
+    if 0<player_x<570:
+        if level[center_y // num1][center_x//num2]==1:  #small yellow dot
+            level[center_y // num1][center_x//num2]=0
+            score+=10   #10 points for a coin
+
+        if level[center_y // num1][center_x//num2]==2:   #big yellow dot
+            level[center_y // num1][center_x//num2]=0
+            score+=50   #50 points for a bigger coin  
+
+        
+        if level[center_y // num1][center_x//num2]==-1:   
+            level[center_y // num1][center_x//num2]=0
+            score-=20   #-20 points for a bigger red slow down ticket   
+    
+    
+    return score
+
+def writeintofile():
+    game=random.randint(00000000, 99999999)
+    filename = 'game_stats_4.csv'
+    #columns = ['game_id', 'time_start', 'time_end', 'score', 'blinky_kill', 'inky_kill', 'playtime']
+    data=[]
+    data.append(game)
+   # data.append(round(st1, 2))
+    #data.append(round(en, 2))
+    data.append(score)
+    data.append(death_by_blinky)
+    data.append(death_by_clyde)
+    data.append(death_by_inky)
+    data.append(round(en-st1, 2))
+
+    with open(filename, mode='a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(data)  
+    
+    print("Game:", game)
+    print("Start Time (rounded):", round(st1, 2))
+    print("End Time (rounded):", round(en, 2))
+    print("Score:", score)
+    print("Deaths by Blinky:", death_by_blinky)
+    print("Deaths by Clyde:", death_by_clyde)
+    print("Deaths by Inky:", death_by_inky)
+    print("Total Duration (rounded):", round(en - st1, 2))
+
+
+run = True
+if run:
+    chomp_sound.play(-1)  ####eating sounds..
+
+st1=time.time()
+while run:
+    if player_y == 570:
+        print("game over")
+        print(f'SCORE:{score}')
+        en=time.time()
+        break
+    if (abs((player_y//15)-blinky_xc)==1 and abs((player_x//20)-blinky_yc)==1):
+        print("Blinky killed you!\nGAME OVER")
+        print(f'SCORE:{score}')
+        death_by_blinky=1
+        en=time.time()
+        break
+    if (time.time()-st1>30 and abs((player_y//15)-clyde_xc)==1 and abs((player_x//20)-clyde_yc)==1):
+        print("Clyde killed you!game over")
+        print(f'SCORE:{score}')
+        death_by_clyde=1
+        en=time.time()
+        break
+    if (time.time()-st1>60 and abs((player_y//15)-inky_xc)<2 and abs((player_x//20)-inky_yc)<2):
+        print("Inky killed you!game over")
+        print(f'SCORE:{score}')
+        death_by_inky=1
+        en=time.time()
+        break
+    timer.tick(fps)
+    if counter < 19:
+        counter+=1
+        if counter > 3:
+            flicker = False
+    else:
+        counter=0
+        flicker = True
+
+
+    screen.fill('black')
+    #<-----------BOARD-------------->
+    draw_board()
+    draw_player()
+    blinky=Ghost(blinky_xc,blinky_yc,targets[0],ghost_speeds[0],blinky_img,blinky_direction,blinky_box,0)
+    clyde=Ghost(clyde_xc,clyde_yc,targets[0],ghost_speeds[0],clyde_img,clyde_direction,clyde_box,0)
+
+    draw_misc()        
+    center_x = player_x + 15
+    center_y = player_y + 15
+    #pygame.draw.circle(screen,'white',(center_x,center_y),2)
+    
+    turns_allowed = check_position(center_x,center_y)
+    player_x,player_y=move_player(player_x,player_y)
+    if (time.time()-st1<60):
+        blinky_xc,blinky_yc=blinky.move_blinky()
+    if (time.time()-st1>30 and time.time()-st1<=60):
+        clyde_xc,clyde_yc=clyde.move_clyde()
+    if (time.time()-st1>60):
+        inky=Ghost(inky_xc,inky_yc,targets[0],ghost_speeds[0],inky_img,inky_direction,inky_box,0)
+        inky_xc,inky_yc=inky.move_inky()
+    #blinky.move_blinky()
+    score = calculatescore(score)
+
+    for event in pygame.event.get():
+        if event.type ==  pygame.QUIT:
+            run = False
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_RIGHT:
+                direction_command = 0
+               # print(0)
+            if event.key == pygame.K_LEFT:
+                direction_command = 1
+                #print(1)
+            if event.key == pygame.K_UP:
+                direction_command = 2
+                #print(2)
+            if event.key == pygame.K_DOWN:
+                direction_command = 3
+                #print(3)
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_RIGHT and direction_command == 0:
+                direction_command = direction
+                #print(direction)
+            if event.key == pygame.K_LEFT and direction_command == 1:
+                direction_command = direction
+                #print(direction)
+            if event.key == pygame.K_UP and direction_command == 2:
+                direction_command = direction
+                #print(direction)
+            if event.key == pygame.K_DOWN and direction_command == 3:
+                direction_command = direction
+                #print(direction)
+        
+    if direction_command == 0 and turns_allowed[0]:
+        direction = 0
+    if direction_command == 1 and turns_allowed[1]:
+        direction = 1
+    if direction_command == 2 and turns_allowed[2]:
+        direction = 2
+    if direction_command == 3 and turns_allowed[3]:
+        direction = 3
+
+    if player_x > 560:
+        player_x = -47
+    elif player_x < -50:
+        player_x = 560
+
+    pygame.display.flip()  
+if death_by_blinky or death_by_clyde or death_by_inky:
+    #print("hi")
+    chomp_sound.stop()
+    text = font.render("The Maze Claims Another Soul!", True, (255, 0, 0))  # Red color text
+    text_rect = text.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+    screen.fill((0, 0, 0))
+    screen.blit(text, text_rect)
+    pygame.display.flip()
+    death_sound.play(0)
+    time.sleep(3)
+else:
+    chomp_sound.stop()
+    text = font.render("The Last Labyrinth Couldn't Hold You. Freedom Is Yours!", True, (255, 0, 0))  # Red color text
+    text_rect = text.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+    screen.fill((0, 0, 0))
+    screen.blit(text, text_rect)
+    pygame.display.flip()
+    win_sound.play(0)
+    time.sleep(3)
+
+writeintofile()
+pygame.quit()
+```
+**Testing :**
+
+<div align="center">
+    <img width="500" alt="1" src="https://github.com/user-attachments/assets/77742e2c-da27-466a-b5b7-d8be1baa2e9c">
+    <p>Image 1 : Start Page</p>
+</div>
+<hr>
+
+<div align="center">
+    <img width="500" alt="2" src="https://github.com/user-attachments/assets/5873210c-74c8-430b-9995-2e99836e5d1b">
+    <p>Image 2 : After Blinky Arrives</p>
+</div>
+<hr>
+
+<div align="center">
+    <img width="500" alt="3" src="https://github.com/user-attachments/assets/138bf87a-8f28-4a29-8030-aaa4f3d6557a">
+    <p>Image 3 : After Inky Arrives</p>
+</div>
+<hr>
+
+<div align="center">
+    <img width="500" alt="4" src="https://github.com/user-attachments/assets/b250ad21-ff76-4650-9679-b1d29b7399e1">
+    <p>Image 4 : After Clyde Arrives</p>
+</div>
+<hr>
